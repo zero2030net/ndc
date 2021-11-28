@@ -110,7 +110,7 @@ body {
 }
 
 .active, .accordion:hover {
-  background-color: #ffffff; 
+  background-color: #f5fff5; 
 }
 
 .panel {
@@ -118,6 +118,18 @@ body {
   display: none;
   background-color: white;
   overflow: hidden;
+}
+
+  .accordion:after {
+  content: '▼';
+  color: #000000;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "▲";
 }
   
   <style>
