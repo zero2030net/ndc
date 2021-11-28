@@ -97,8 +97,8 @@ body {
 }
 
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #eeffee;
+  color: #000000;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -110,7 +110,7 @@ body {
 }
 
 .active, .accordion:hover {
-  background-color: #ccc; 
+  background-color: #ffffff; 
 }
 
 .panel {
@@ -118,6 +118,7 @@ body {
   display: none;
   background-color: white;
   overflow: hidden;
+}
   
   <style>
 body {
@@ -174,6 +175,39 @@ p3 {
   <br>
   <br>
   <br>
+  <h2>Nationally Determined Contributions (NDC's)</h2>
+
+<button class="accordion">Why do NDC's matter?</button>
+<div class="panel">
+  <p>Nationally determined contributions (NDCs) are at the heart of the Paris Agreement and the achievement of these long-term goals. NDCs embody efforts by each country to reduce national emissions and adapt to the impacts of climate change. The Paris Agreement (Article 4, paragraph 2) requires each Party to prepare, communicate and maintain successive nationally determined contributions (NDCs) that it intends to achieve. Parties shall pursue domestic mitigation measures, with the aim of achieving the objectives of such contributions.</p>
+</div>
+
+<button class="accordion">How are NDC's reported?</button>
+<div class="panel">
+  <p>NDCs are submitted every five years to the UNFCCC secretariat. In order to enhance the ambition over time the Paris Agreement provide that successive NDCs will represent a progression compared to the previous NDC and reflect its highest possible ambition. Parties are requested to submit the next round of NDCs (new NDCs or updated NDCs) by 2020 and every five years thereafter (e.g. by 2020, 2025, 2030), regardless of their respective implementation time frames.</p>
+</div>
+
+<button class="accordion">What do NDC's measure?</button>
+<div class="panel">
+  <p>Starting in 2023 and then every five years, governments will take stock of the implementation of the Agreement to assess the collective progress towards achieving the purpose of the Agreement and its long-term goals. The outcome of the global stocktake (GST) will inform the preparation of subsequent NDCs, in order to allow for increased ambition and climate action to achieve the purpose of the Paris Agreement and its long-term goals.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
   <br>
   <br>
   <h1 id="Why they matter">Why do NDC's matter?</h1>
@@ -184,20 +218,6 @@ p3 {
   <p1> Starting in 2023 and then every five years, governments will take stock of the implementation of the Agreement to assess the collective progress towards achieving the purpose of the Agreement and its long-term goals. The outcome of the global stocktake (GST) will inform the preparation of subsequent NDCs, in order to allow for increased ambition and climate action to achieve the purpose of the Paris Agreement and its long-term goals. </p1>
   <br>
   <br>
-  <button class="accordion"><h1 id="Why they matter">Why do NDC's matter?</h1></button>
-<div class="panel">
-    <p1> Nationally determined contributions (NDCs) are at the heart of the Paris Agreement and the achievement of these long-term goals. NDCs embody efforts by each country to reduce national emissions and adapt to the impacts of climate change. The Paris Agreement (Article 4, paragraph 2) requires each Party to prepare, communicate and maintain successive nationally determined contributions (NDCs) that it intends to achieve. Parties shall pursue domestic mitigation measures, with the aim of achieving the objectives of such contributions. </p1>
-</div>
-
-<button class="accordion">Section 2</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<button class="accordion">Section 3</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
   <br>
   <br>
   <br>
@@ -233,23 +253,6 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
-</script>
-  
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
 </script>
 
   <br>
